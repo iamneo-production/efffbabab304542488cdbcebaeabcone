@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class first{
     public static void main(String[] args) {
@@ -13,6 +14,9 @@ public class first{
         lisname.add(2);
         lisname.add(3);
         lisname.add(4);
-        System.out.println(lisname);
+        Set<Integer> setting = new HashSet<>();
+        for(int i: lisname)
+            setting.add(i);
+        System.out.println(setting);
     }
 }
